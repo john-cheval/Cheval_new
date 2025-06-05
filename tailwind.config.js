@@ -34,6 +34,10 @@ module.exports = {
         main: "#101763",
         sec: "#d81100",
       },
+      boxShadow: {
+        "hero-sm": "0px 0px 52px 0px rgba(0, 0, 0, 0.11)",
+        "hero-btn": "0px 4px 52px 0px rgba(0, 0, 0, 0.11)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -78,6 +82,8 @@ module.exports = {
           "linear-gradient(238deg, #E7E7E7 -10.07%, #FFF 57.82%)",
         "ads-portfolio-grad":
           "linear-gradient(180deg, rgba(248, 248, 248, 0.00) 0%, #F8F8F8 100%)",
+        "hero-achieve":
+          "linear-gradient(142deg, #101763 -20.54%, #D81100 108.68%)",
       },
     },
   },

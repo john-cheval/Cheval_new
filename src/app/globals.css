@@ -86,6 +86,38 @@ body {
   overflow-x: hidden;
   font-family: "Satoshi", sans-serif;
 }
+.container-main {
+  @apply px-5 sm:px-10 md:px-12;
+}
+
+/* Home */
+/* .hero-bg {
+  background: url("/Home/NewHome/globe.gif"), #fff;
+  background-position: center center;
+  background-size: 30% auto;
+  background-repeat: no-repeat;
+} */
+.hero-bg::after {
+  position: absolute;
+  content: "";
+  background: url("/Home/NewHome/globe.gif"), #fff;
+  background-position: center center;
+  background-size: 35% auto;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-text {
+  background: linear-gradient(90deg, #000 78.52%, #d81100 89.79%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  color: transparent;
+}
 
 @keyframes ticker-kf {
   0% {
