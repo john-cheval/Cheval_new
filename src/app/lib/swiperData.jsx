@@ -147,3 +147,36 @@ export const galleryData = [
     link: true,
   },
 ];
+
+export const technolgiesData = [
+  {
+    imageUrl: "/Home/NewHome/chatgpt.svg",
+    title: "Open AI",
+    description: "01,GPT4, Chat GPT, Dall-E, Whisper",
+  },
+  {
+    imageUrl: "/Home/NewHome/claude.svg",
+    title: "Claude",
+    description: "Claude 3 Opus, Claude 3.5 Sonnet",
+  },
+  {
+    imageUrl: "/Home/NewHome/meta.svg",
+    title: "Meta",
+    description: "Claude 3 Opus, Claude 3.5 Sonnet",
+  },
+  {
+    imageUrl: "/Home/NewHome/claude.svg",
+    title: "V0",
+    description: "Claude 3 Opus, Claude 3.5 Sonnet",
+  },
+  {
+    imageUrl: "/Home/NewHome/chatgpt.svg",
+    title: "Open AI",
+    description: "01,GPT4, Chat GPT, Dall-E, Whisper",
+  },
+  {
+    imageUrl: "/Home/NewHome/meta.svg",
+    title: "Meta",
+    description: "Claude 3 Opus, Claude 3.5 Sonnet",
+  },
+];

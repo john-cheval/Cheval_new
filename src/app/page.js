@@ -5,6 +5,7 @@ import SectionThree from "@/components/Home/Section3";
 import SectionFour from "@/components/Home/Section4";
 import Capabilities from "@/components/Home/Capabilities";
 import Gallery from "@/components/Home/Gallery";
+import Technologies from "@/components/Home/Technologies";
 
 export default async function Home() {
   const clients = await fetchData(
@@ -19,6 +20,7 @@ export default async function Home() {
       <SectionFour />
       <Capabilities />
       <Gallery />
+      <Technologies />
     </>
   );
 }

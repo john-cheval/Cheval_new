@@ -58,33 +58,31 @@ const SwiperCards = () => {
               key={index}
               className="bg-[#1E2028] backdrop-blur-[5.599999904632568px] opacity-[0.93] py-16 pl-10 pr-24"
             >
-              <div>
-                <div className=" flex gap-x-20 ">
-                  <p className="text-white text-2xl font-satoshi font-medium">
-                    {index > 9 ? "" : "0"}
-                    {index + 1}.
-                  </p>
+              <div className=" flex gap-x-20 ">
+                <p className="text-white text-2xl font-satoshi font-medium">
+                  {index > 9 ? "" : "0"}
+                  {index + 1}.
+                </p>
 
-                  <div>
-                    <h5 className="text-white text-2xl font-satoshi font-medium min-h-[65px]">
-                      {data?.title}
-                    </h5>
-                    <p className="max-w-[380px] font-satoshi text-base leading-[187%] text-[#80848D] mt-10">
-                      {descText}
-                    </p>
-                    <Link
-                      href={"/"}
-                      className="text-base font-satoshi flex items-center gap-x-3 mt-6 group w-fit"
-                    >
-                      Read more{" "}
-                      <span className="bg-[#35373E] h-12 w-12 rounded-full flex items-center justify-center group-hover:bg-transparent transition-colors duration-300 ">
-                        <ArrowRight
-                          className="text-white group-hover:translate-x-2 transition-transform duration-300"
-                          size={16}
-                        />
-                      </span>
-                    </Link>
-                  </div>
+                <div>
+                  <h5 className="text-white text-2xl font-satoshi font-medium min-h-[65px]">
+                    {data?.title}
+                  </h5>
+                  <p className="max-w-[380px] font-satoshi text-base leading-[187%] text-[#80848D] mt-10">
+                    {descText}
+                  </p>
+                  <Link
+                    href={"/"}
+                    className="text-base font-satoshi flex items-center gap-x-3 mt-6 group w-fit"
+                  >
+                    Read more{" "}
+                    <span className="bg-[#35373E] h-12 w-12 rounded-full flex items-center justify-center group-hover:bg-transparent transition-colors duration-300 ">
+                      <ArrowRight
+                        className="text-white group-hover:translate-x-2 transition-transform duration-300"
+                        size={16}
+                      />
+                    </span>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
