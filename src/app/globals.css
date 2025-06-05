@@ -119,7 +119,7 @@ body {
   color: transparent;
 }
 .videos::after {
-  content: " ";
+  content: "                    ";
   position: absolute;
   top: 0;
   width: 100%;
