@@ -118,6 +118,12 @@ body {
   display: inline-block;
   color: transparent;
 }
+.capabilities-text {
+  background: linear-gradient(90deg, #101763 0%, #d81100 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .videos::after {
   content: "                    ";
   position: absolute;

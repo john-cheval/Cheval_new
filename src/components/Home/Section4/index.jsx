@@ -27,7 +27,7 @@ const SectionFour = () => {
         scrambled
       </motion.p>
 
-      <div>
+      <div className="pt-12">
         <SwiperCards />
       </div>
 

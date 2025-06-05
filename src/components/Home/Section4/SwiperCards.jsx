@@ -11,7 +11,7 @@ import { truncateByWords } from "@/app/lib/truncateByWords";
 const SwiperCards = () => {
   const swiperRef = useRef(null);
   return (
-    <article className="w-full pt-12">
+    <article className="w-full ">
       <Swiper
         onSwiper={(swiper) => {
           swiperRef.current = swiper;

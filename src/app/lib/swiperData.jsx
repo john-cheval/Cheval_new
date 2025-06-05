@@ -30,3 +30,41 @@ export const swiperData = [
     link: "/",
   },
 ];
+
+export const capabilitiesData = [
+  {
+    title: "Content Generation",
+    description:
+      "Automatically create high-quality text, images, audio, and video—from marketing copy to technical documentation and creative storytelling.",
+  },
+  {
+    title: "Code Generation & Automation",
+    description:
+      "Accelerate software development with AI-assisted coding, debugging, and documentation across multiple languages and frameworks.",
+  },
+  {
+    title: "Design & Creativity",
+    description:
+      "Generate stunning visuals, UI/UX mockups, branding assets, and product designs, reducing creative cycles and boosting innovation.",
+  },
+  {
+    title: "Data Augmentation & Simulation",
+    description:
+      "Produce synthetic data to enhance model training, test scenarios, and reduce reliance on sensitive or limited real-world data.",
+  },
+  {
+    title: "Personalization at Scale",
+    description:
+      "Generate tailored recommendations, messages, and experiences for users based on behavior, preferences, and intent.",
+  },
+  {
+    title: "Conversational Interfaces",
+    description:
+      "Power advanced chatbots and virtual assistants that understand natural language and provide intelligent, human-like interactions.",
+  },
+  {
+    title: "Knowledge Extraction & Summarization",
+    description:
+      "Automatically summarize reports, extract insights, and convert unstructured data into actionable knowledge.",
+  },
+];

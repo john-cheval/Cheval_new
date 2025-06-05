@@ -3,6 +3,7 @@ import Hero from "@/components/Home/Hero";
 import { fetchData } from "./lib/fetchData";
 import SectionThree from "@/components/Home/Section3";
 import SectionFour from "@/components/Home/Section4";
+import Capabilities from "@/components/Home/Capabilities";
 
 export default async function Home() {
   const clients = await fetchData(
@@ -14,6 +15,7 @@ export default async function Home() {
       <Clients clientsData={clients} />
       <SectionThree />
       <SectionFour />
+      <Capabilities />
     </>
   );
 }
