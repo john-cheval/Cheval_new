@@ -68,3 +68,82 @@ export const capabilitiesData = [
       "Automatically summarize reports, extract insights, and convert unstructured data into actionable knowledge.",
   },
 ];
+
+export const galleryData = [
+  {
+    title: "Artificial Intelligence",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    imageUrl: false,
+    isBg: false,
+    link: true,
+  },
+  {
+    title: false,
+    description: false,
+    imageUrl: "/Home/NewHome/2.jpg",
+    isBg: false,
+    link: false,
+  },
+  {
+    title: "Gen AI",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    imageUrl: false,
+    isBg: false,
+    link: true,
+  },
+  {
+    title: false,
+    description: false,
+    imageUrl: "/Home/NewHome/6.mp4",
+    isBg: false,
+    link: false,
+  },
+  {
+    title: "Block Chain",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    imageUrl: false,
+    isBg: false,
+    link: true,
+  },
+  {
+    title: false,
+    description: false,
+    imageUrl: "/Home/NewHome/5.mp4",
+    isBg: false,
+    link: false,
+  },
+  {
+    title: "Machine Learning",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    imageUrl: false,
+    isBg: true,
+    link: true,
+  },
+  {
+    title: "Data Science",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    imageUrl: false,
+    isBg: false,
+    link: true,
+  },
+  {
+    title: false,
+    description: false,
+    imageUrl: "/Home/NewHome/1.jpg",
+    isBg: false,
+    link: false,
+  },
+  {
+    title: "Business Analytics",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    imageUrl: false,
+    isBg: false,
+    link: true,
+  },
+];

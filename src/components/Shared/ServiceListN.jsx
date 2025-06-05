@@ -1,11 +1,6 @@
-// "use client";
 import Link from "next/link";
-// import { usePathname } from "next/navigation";
 
 export const ServiceList = ({ title, data, url, closeMegaMenu }) => {
-  // const pathname = usePathname();
-  // const spliitedText = pathname.split("/").filter(Boolean)[2];
-  // console.log(data, "url");
   return (
     <div className="space-y-2 ">
       <p className="font-sora font-base font-semibold leading-[190%]-- heading-gradient">
