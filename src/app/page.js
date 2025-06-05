@@ -1,10 +1,15 @@
+import Clients from "@/components/Home/Clients";
 import Hero from "@/components/Home/Hero";
-import Image from "next/image";
+import { fetchData } from "./lib/fetchData";
 
-export default function Home() {
+export default async function Home() {
+  const clients = await fetchData(
+    "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/all_clients"
+  );
   return (
     <>
       <Hero />
+      <Clients clientsData={clients} />
     </>
   );
 }

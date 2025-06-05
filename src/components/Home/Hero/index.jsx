@@ -5,10 +5,11 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="hero-bg h-screen bg-white relative overflow-hidden">
-      {/* Globe */}
+      {/* Craft */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2">
         <Image
           src={"./Home/NewHome/craft_code_convert.svg"}
+          alt="Craft"
           width={1000}
           height={100}
           sizes="100vw"
@@ -23,6 +24,7 @@ const Hero = () => {
           src={"./Home/NewHome/ai.png"}
           width={1000}
           height={100}
+          alt="AI"
           sizes="100vw"
           className="w-full h-auto object-cover"
           unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
@@ -35,6 +37,7 @@ const Hero = () => {
           src={"./Home/NewHome/start.svg"}
           width={1000}
           height={100}
+          alt="Star"
           sizes="100vw"
           className="w-full h-auto object-cover"
           unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
@@ -49,6 +52,7 @@ const Hero = () => {
             width={32}
             height={32}
             sizes="100vw"
+            alt="Achievements"
             className="w-full h-auto object-cover "
             unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
           />
@@ -66,7 +70,7 @@ const Hero = () => {
       </div>
 
       {/* Happy Clients */}
-      <div className="bg-white py-4 px-3 shadow-hero-sm w-fit flex gap-x-3  rounded-[8px] absolute bottom-[5%] right-[25%] ju">
+      <div className="bg-white py-4 px-3 shadow-hero-sm w-fit flex gap-x-3  rounded-[8px] absolute bottom-[10%] right-[25%] ju">
         <div className="relative">
           <div className="bg-[#101763] py-4 px-3 rounded-[8px] flex items-center justify-center  h-14 w-14 mx-auto ">
             <Image
@@ -74,6 +78,7 @@ const Hero = () => {
               width={32}
               height={32}
               sizes="100vw"
+              alt="smile"
               className="w-full h-auto object-cover h-8-  "
               unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
             />
@@ -121,6 +126,7 @@ const Hero = () => {
             width={1000}
             height={100}
             sizes="100vw"
+            alt="play"
             className="w-full h-auto object-cover max-w-6"
             unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
           />
@@ -143,12 +149,26 @@ const Hero = () => {
           <Image
             src={"./Home/NewHome/arrow.gif"}
             width={1000}
+            alt="arrow"
             height={100}
             sizes="100vw"
             className="w-full h-auto object-cover max-w-5 rotate-180 -mt-1"
             unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
           />
         </Link>
+      </div>
+
+      {/* Overlay */}
+      <div className="absolute bottom-0 left-[45%] -translate-x-1/2 z-[60]">
+        <Image
+          src={"./Home/NewHome/grad.svg"}
+          width={1000}
+          alt="gradient"
+          height={100}
+          sizes="100vw"
+          className="w-full h-auto object-cover max-w-[600px] "
+          unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
+        />
       </div>
     </section>
   );
