@@ -54,7 +54,7 @@ const Gallery = () => {
                           <div>
                             <Image
                               src={item?.imageUrl}
-                              alt={item?.title}
+                              alt={item?.title || "image"}
                               width={300}
                               height={100}
                               sizes="100vw"
