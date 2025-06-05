@@ -118,6 +118,15 @@ body {
   display: inline-block;
   color: transparent;
 }
+.videos::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: red;
+}
 
 @keyframes ticker-kf {
   0% {
