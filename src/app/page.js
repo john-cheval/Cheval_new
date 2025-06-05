@@ -49,7 +49,7 @@ export default async function Home() {
       <Capabilities />
       <Gallery />
       <Technologies />
-      {/* <Work data={projects} /> */}
+      <Work data={projects} />
       <GoogleReviews data={reviews} />
       <Blogs blogData={blogs} />
     </>

@@ -13,7 +13,7 @@ const Blogs = ({ blogData }) => {
   const router = useRouter();
 
   return (
-    <div className="h-fit bg-white pb-20 container-main pt-11">
+    <div className="h-fit bg-white pb-20 container-main pt-11 relative">
       <h5 className="font-satoshi text-[#101743] text-[40px] font-medium leading-[120%]">
         Blogs
       </h5>
