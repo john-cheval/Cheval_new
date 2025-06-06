@@ -6,16 +6,9 @@ import * as motion from "motion/react-client";
 
 const Capabilities = () => {
   return (
-    <section className="container-main pt-16 bg-white">
-      <div className="grid grid-cols-12 gap-x-16">
-        <div
-          className="col-span-5 mb-auto "
-          style={{
-            position: "sticky",
-            top: "100px",
-            alignSelf: "start",
-          }}
-        >
+    <section className="container-main pt-12 lg:pt-16 bg-white">
+      <div className="grid grid-cols-12 gap-y-8 md:gap-x-8 lg:gap-x-12 xl:gap-x-16">
+        <div className="col-span-12 left-side md:col-span-5 mb-auto ">
           <video
             src="/Home/NewHome/4.mp4"
             autoPlay
@@ -25,13 +18,13 @@ const Capabilities = () => {
             className="w-full h-full   object-contain "
           />
         </div>
-        <div className="col-span-7">
+        <div className="col-span-12 md:col-span-7">
           <motion.h5
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="font-satoshi text-[40px] text-[#101763] font-medium leading-[120%] mb-9"
+            className="main-heading-2 mb-6 lg:mb-9 text-center md:text-left"
           >
             Generative AI Capabilities
           </motion.h5>
@@ -48,13 +41,13 @@ const Capabilities = () => {
                     ease: "easeOut",
                   }}
                   key={index}
-                  className="grid grid-cols-12 k-- border-t border-t-[#C9C9C9] py-6"
+                  className="grid grid-cols-12  border-t border-t-[#C9C9C9] py-4 lg:py-6"
                 >
                   <div className="col-span-10 space-y-3">
-                    <h5 className="font-satoshi text-2xl font-medium capabilities-text w-fit">
+                    <h5 className="font-satoshi text-xl md:text-2xl font-medium capabilities-text w-fit">
                       {data?.title}
                     </h5>
-                    <p className="font-satoshi text-[#9a9a9a] text-base leading-[176%]">
+                    <p className="font-satoshi text-[#9a9a9a] text-sm md:text-base leading-[176%]">
                       {data?.description}
                     </p>
                   </div>

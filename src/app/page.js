@@ -12,25 +12,23 @@ import GoogleReviews from "@/components/Shared/Reviews";
 import Blogs from "@/components/Home/Blogs";
 
 export default async function Home() {
-  const clients = await fetchData(
-    "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/all_clients"
-  );
-
-  const homeContent = await fetchData(
-    "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/homepage_details?ID=8"
-  );
-
-  const projects = await fetchData(
-    "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/homeprojects"
-  );
-
-  const reviews = await fetchData(
-    "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/google_reviews"
-  );
-
-  const blogs = await fetchData(
-    "https://d331b20430.nxcli.net/chevalapi/wp-json/wp/v2/posts?_embed"
-  );
+  const [clients, homeContent, projects, reviews, blogs] = await Promise.all([
+    fetchData(
+      "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/all_clients"
+    ),
+    fetchData(
+      "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/homepage_details?ID=8"
+    ),
+    fetchData(
+      "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/homeprojects"
+    ),
+    fetchData(
+      "https://d331b20430.nxcli.net/chevalapi/wp-json/custom/v1/google_reviews"
+    ),
+    fetchData(
+      "https://d331b20430.nxcli.net/chevalapi/wp-json/wp/v2/posts?_embed"
+    ),
+  ]);
 
   return (
     <>

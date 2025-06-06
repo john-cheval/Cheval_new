@@ -86,6 +86,10 @@ module.exports = {
           "linear-gradient(142deg, #101763 -20.54%, #D81100 108.68%)",
         "section-3":
           " linear-gradient(360deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)",
+        "section-1-1":
+          "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)",
+        "section-1-2":
+          "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)",
       },
     },
   },
