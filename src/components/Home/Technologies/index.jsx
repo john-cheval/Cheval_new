@@ -4,7 +4,7 @@ import * as motion from "motion/react-client";
 
 const Technologies = () => {
   return (
-    <section className="pt-24 container-main bg-white">
+    <section className=" pt-10 md:pt-16 lg:pt-24 container-main bg-white pb-8 md:pb-0">
       <div className="grid grid-cols-12 gap-y-5 md:gap-x-5 2xl:gap-x-12">
         <div className="col-span-12 md:col-span-6 lg:col-span-5 space-y-4">
           <motion.h5
