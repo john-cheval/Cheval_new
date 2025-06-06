@@ -14,7 +14,7 @@ const Blogs = ({ blogData }) => {
 
   return (
     <div className="h-fit bg-white pb-10   md:pb-14 xl:pb-20 container-main pt-11 relative">
-      <h5 className="main-heading-2">Blogs</h5>
+      <h5 className="main-heading-2 text-center md:text-left">Blogs</h5>
 
       <div className="w-full pt-9 pb-7 md:pb-14">
         <Swiper

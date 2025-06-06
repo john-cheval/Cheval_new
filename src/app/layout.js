@@ -2,6 +2,7 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 import ServerNavbar from "@/components/Shared/ServerNavbar";
 import ServerFooter from "@/components/Shared/Footer/ServerFooter";
+import SideBar from "@/components/Shared/SideBar";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
           {" "}
           {/* <ScrollToTop /> */}
           {children}
+          <SideBar />
         </main>
         <ServerFooter />
       </body>
