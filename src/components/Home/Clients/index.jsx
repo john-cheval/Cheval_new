@@ -27,12 +27,12 @@ const Clients = ({ clientsData }) => {
   }, []);
 
   const list = useMemo(() => (
-    <div className="flex w-fit ">
+    <div className="flex w-fit  overflow-hidden">
       {elements?.map((client, index) => {
         return (
           <div
             key={index}
-            className={`     flex items-center justify-center py-7 min-w-[240px] shrink-0`}
+            className={`flex items-center justify-center py-7 min-w-[240px] shrink-0`}
           >
             <Image
               src={client?.image}
@@ -41,7 +41,7 @@ const Clients = ({ clientsData }) => {
               height={150}
               sizes="100vw"
               unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
-              className="w-full h-auto object-cover max-w-[150px] md:max-w-[200px]"
+              className="w-full h-auto object-cover max-w-[200px] md:max-w-[200px]"
             />
           </div>
         );
@@ -49,7 +49,7 @@ const Clients = ({ clientsData }) => {
     </div>
   ));
   return (
-    <div className="bg-white pt-16 pb-10">
+    <div className="bg-white  md:pt-12 lg:pt-16 lg:pb-10 overflow-hidden">
       <div ref={movingContainer} className="flex w-fit">
         {list}
         {/* {list} */}

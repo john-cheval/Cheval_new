@@ -8,7 +8,7 @@ const WorkMobile = ({ data }) => {
   const renderCard = (key, index) => (
     <div
       key={index}
-      className="w-full h-fit mt-5 sm:mt-0 relative sm:bg-transparent bg-[#F6F6F4] rounded-[30px] overflow-hidden"
+      className="w-full h-fit mt-5 sm:mt-0 relative sm:bg-transparent bg-[#F6F6F4]- bg-white rounded-[30px] overflow-hidden"
     >
       <div className="w-full relative h-full">
         {isVideo(data[key]?.home_image) ? (
@@ -79,7 +79,10 @@ const WorkMobile = ({ data }) => {
   );
 
   return (
-    <div className="px-5 sm:px-10 md:px-12">
+    <div
+      className="px-5 sm:px-10 md:px-12 
+    !bg-white"
+    >
       <h1 className="font-semibold text-[#D81100] font-sora tracking-tighter text-[60px] sm:text-[70px] text-center">
         Works
       </h1>

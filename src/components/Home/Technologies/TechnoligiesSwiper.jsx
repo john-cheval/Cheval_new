@@ -23,13 +23,32 @@ const TechnoligiesSwiper = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+          },
+
+          600: {
+            slidesPerView: 2.3,
+            spaceBetween: 11,
+          },
+          768: {
+            slidesPerView: 1.3,
+            spaceBetween: 11,
+          },
+          1280: {
+            slidesPerView: 2.3,
+            spaceBetween: 22,
+          },
+        }}
         modules={[Autoplay]}
         className="mySwiper p-1 ![&_.swiper-wrapper]:!ease-in-out ![&_.swiper-wrapper]:!duration-300 overflow-hidden"
       >
         {technolgiesData?.map((tech, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="flex gap-x-4 p-10 border border-[#D9D9D9]">
+              <div className="flex gap-x-4 p-6 lg:p-10 border border-[#D9D9D9]">
                 <Image
                   src={tech?.imageUrl}
                   alt={tech?.title}
@@ -43,10 +62,10 @@ const TechnoligiesSwiper = () => {
                 />
 
                 <div className="space-y-2">
-                  <p className="text-black font-satoshi text-2xl font-medium ">
+                  <p className="text-black font-satoshi text-xl md:text-2xl font-medium ">
                     {tech?.title}
                   </p>
-                  <p className="text-base text-[#80848d] font-satoshi leading-[187%]">
+                  <p className="text-sm md:text-base text-[#80848d] font-satoshi leading-[187%]">
                     {tech?.description}
                   </p>
                 </div>

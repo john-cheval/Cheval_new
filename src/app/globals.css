@@ -90,6 +90,9 @@ body {
   @apply px-5 sm:px-10 md:px-12;
 }
 
+.main-heading-2 {
+  @apply text-[#101763] font-satoshi text-3xl lg:text-4xl xl:text-[40px] font-medium leading-[120%];
+}
 /* Home */
 /* .hero-bg {
   background: url("/Home/NewHome/globe.gif"), #fff;
@@ -123,15 +126,6 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.videos::after {
-  content: "                    ";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  background-color: red;
 }
 
 @keyframes ticker-kf {
@@ -1082,3 +1076,14 @@ input[type="number"] {
   background-repeat: no-repeat;
   background-position: top center;
 } */
+.left-side {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+
+@media (max-width: 767px) {
+  .left-side {
+    position: static;
+  }
+}
