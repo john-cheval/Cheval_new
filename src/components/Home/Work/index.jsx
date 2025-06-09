@@ -18,6 +18,8 @@ function Work({ data }) {
     gsap.registerPlugin(ScrollTrigger);
     const pinnedWorksItems = document.getElementById("pinnedWorksItems");
     const workInnerHeight = pinnedWorksItems.children[0].clientHeight;
+    const cardCount = pinnedWorksItems.children.length - 1;
+    const totalScrollHeight = (workInnerHeight + 10) * cardCount;
 
     const timeline = gsap.timeline({
       scrollTrigger: {
@@ -25,7 +27,7 @@ function Work({ data }) {
         pin: true,
         scrub: 2,
         start: "top 50px",
-        end: "+=150%",
+        end: "+=100%",
         // markers: true,
       },
     });
@@ -42,6 +44,36 @@ function Work({ data }) {
 
     timeline.to("#pinnedWorks", { delay: 0.2 });
   }, []);
+
+  // useGSAP(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+
+  //   const pinnedWorksItems = document.getElementById("pinnedWorksItems");
+  //   const cardCount = pinnedWorksItems.children.length - 1; // minus initial placeholder card
+  //   const workInnerHeight = pinnedWorksItems.children[0].clientHeight;
+  //   const totalScrollHeight = (workInnerHeight + 20) * cardCount;
+
+  //   const timeline = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: "#pinnedWorkSection",
+  //       pin: true,
+  //       scrub: 2,
+  //       start: "top top",
+  //       end: `+=${totalScrollHeight}`,
+  //       // markers: true,
+  //     },
+  //   });
+
+  //   for (let i = 0; i < cardCount; i++) {
+  //     timeline.to(
+  //       pinnedWorksItems.children[i + 1],
+  //       {
+  //         y: -(workInnerHeight + 20) * (i + 1),
+  //       },
+  //       "<65%"
+  //     );
+  //   }
+  // }, []);
 
   useEffect(() => {
     const handleScroll = () => {
