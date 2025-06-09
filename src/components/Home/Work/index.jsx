@@ -18,14 +18,16 @@ function Work({ data }) {
     gsap.registerPlugin(ScrollTrigger);
     const pinnedWorksItems = document.getElementById("pinnedWorksItems");
     const workInnerHeight = pinnedWorksItems.children[0].clientHeight;
+    const cardCount = pinnedWorksItems.children.length - 1;
+    const totalScrollHeight = (workInnerHeight + 10) * cardCount;
 
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: "#pinnedWorkSection",
         pin: true,
-        scrub: true,
+        scrub: 2,
         start: "top 50px",
-        end: "+=400%",
+        end: "+=100%",
         // markers: true,
       },
     });
@@ -42,6 +44,36 @@ function Work({ data }) {
 
     timeline.to("#pinnedWorks", { delay: 0.2 });
   }, []);
+
+  // useGSAP(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+
+  //   const pinnedWorksItems = document.getElementById("pinnedWorksItems");
+  //   const cardCount = pinnedWorksItems.children.length - 1; // minus initial placeholder card
+  //   const workInnerHeight = pinnedWorksItems.children[0].clientHeight;
+  //   const totalScrollHeight = (workInnerHeight + 20) * cardCount;
+
+  //   const timeline = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: "#pinnedWorkSection",
+  //       pin: true,
+  //       scrub: 2,
+  //       start: "top top",
+  //       end: `+=${totalScrollHeight}`,
+  //       // markers: true,
+  //     },
+  //   });
+
+  //   for (let i = 0; i < cardCount; i++) {
+  //     timeline.to(
+  //       pinnedWorksItems.children[i + 1],
+  //       {
+  //         y: -(workInnerHeight + 20) * (i + 1),
+  //       },
+  //       "<65%"
+  //     );
+  //   }
+  // }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -151,7 +183,7 @@ function Work({ data }) {
 
   return (
     <>
-      <div className=" w-full h-[100dvh]-- md:flex sticky top-0 items-center justify-center pointer-events-none z-0 hidden py-12 bg-white">
+      <div className=" w-full h-[100dvh]- md:flex sticky top-0 items-center justify-center pointer-events-none z-0 hidden py-12 bg-white">
         <h2
           id="worksText"
           className="font-semibold text-[#D81100] font-sora tracking-tighter text-[90px] sm:text-[130px] md:text-[180px] lg:text-[200px] 
