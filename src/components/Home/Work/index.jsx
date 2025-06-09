@@ -23,9 +23,9 @@ function Work({ data }) {
       scrollTrigger: {
         trigger: "#pinnedWorkSection",
         pin: true,
-        scrub: true,
+        scrub: 2,
         start: "top 50px",
-        end: "+=400%",
+        end: "+=150%",
         // markers: true,
       },
     });
@@ -151,7 +151,7 @@ function Work({ data }) {
 
   return (
     <>
-      <div className=" w-full h-[100dvh]-- md:flex sticky top-0 items-center justify-center pointer-events-none z-0 hidden py-12 bg-white">
+      <div className=" w-full h-[100dvh]- md:flex sticky top-0 items-center justify-center pointer-events-none z-0 hidden py-12 bg-white">
         <h2
           id="worksText"
           className="font-semibold text-[#D81100] font-sora tracking-tighter text-[90px] sm:text-[130px] md:text-[180px] lg:text-[200px] 
